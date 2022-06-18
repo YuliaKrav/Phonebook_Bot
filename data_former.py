@@ -4,7 +4,8 @@ def format_string(number, data_list):
     length_item = 20
     result = str(number) + " " * (length_number - len(str(number)))
     for item in data_list:
-        result += item + " " * (length_item - len(str(item)))
+        result += item + " " * (length_item - len(item))
+        # print(item + "*" * (length_item - len(item)))
     return result
 
 
